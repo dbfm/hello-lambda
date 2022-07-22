@@ -7,7 +7,7 @@ on:
       - 'src/**.js'
   push:
     branches:
-      - master
+      - main
 
 jobs:
   plan:
