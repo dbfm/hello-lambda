@@ -25,11 +25,11 @@ jobs:
         uses: dflook/terraform-new-workspace@v1
         with:
           path: deployment
-          workspace: ${{ github.head_ref }}
+          workspace: ${{ github.ref_name }}
 
       - name: Terraform Apply
         uses: dflook/terraform-apply@v1
         with:
           path: deployment
-          workspace: ${{ github.head_ref }}
+          workspace: ${{ github.ref_name }}
           auto_approve: true
